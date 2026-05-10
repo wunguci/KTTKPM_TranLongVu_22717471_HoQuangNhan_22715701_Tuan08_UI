@@ -286,29 +286,7 @@ const ProductPage = ({ products = [], message, onAddToCart }) => {
     };
 
     return (
-        <div className="w-full min-h-screen bg-[#f7f6f2]">
-            <header className="w-full border-b border-stone-200 bg-[#f7f6f2]/90 backdrop-blur sticky top-0 z-30">
-                <div className="w-full px-6 md:px-10 xl:px-16 py-4 flex items-center justify-between">
-                    <div className="flex items-baseline gap-4">
-                        <h1 className="font-serif text-2xl text-stone-900 leading-none">
-                            Bộ Sưu Tập
-                        </h1>
-                        <span className="hidden sm:block text-[10px] tracking-[0.2em] text-stone-400 uppercase">
-                            {products.length} sản phẩm
-                        </span>
-                    </div>
-                    <div className="flex items-center gap-5">
-                        <button className="text-[10px] tracking-[0.2em] text-stone-500 uppercase hover:text-stone-900 transition-colors">
-                            Sắp xếp
-                        </button>
-                        <div className="w-px h-4 bg-stone-200" />
-                        <button className="text-[10px] tracking-[0.2em] text-stone-500 uppercase hover:text-stone-900 transition-colors">
-                            Lọc
-                        </button>
-                    </div>
-                </div>
-            </header>
-
+        <div className="w-full min-h-screen bg-[#f7f6f2] pt-8">
             <div className="w-full px-6 md:px-10 xl:px-16 py-6 border-b border-stone-100 flex items-center justify-between">
                 <p className="text-[11px] tracking-[0.25em] text-stone-400 uppercase">
                     Những kiệt tác vượt thời gian

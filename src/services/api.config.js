@@ -5,4 +5,5 @@ export const API_URLS = {
     CART: `http://${SERVER_IP}:${import.meta.env.VITE_CART_SERVICE_PORT || '8082'}`,
     ORDER: `http://${SERVER_IP}:${import.meta.env.VITE_ORDER_SERVICE_PORT || '8083'}`,
     INVENTORY: `http://${SERVER_IP}:${import.meta.env.VITE_INVENTORY_SERVICE_PORT || '8084'}`,
+    USER: `http://${SERVER_IP}:${import.meta.env.VITE_USER_SERVICE_PORT || '8085'}`,
 };

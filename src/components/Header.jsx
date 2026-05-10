@@ -1,6 +1,7 @@
 import CartBox from './CartBox';
+import UserMenu from './UserMenu';
 
-const Header = ({ cart, total, loading, onCheckout }) => {
+const Header = ({ cart, total, loading, onCheckout, onUserChange }) => {
     return (
         <header className="w-full border-b border-stone-200 bg-[#f7f6f2]/90 backdrop-blur sticky top-0 z-100">
             <div className="w-full px-6 md:px-10 xl:px-16 py-4 flex items-center justify-between">
@@ -23,13 +24,15 @@ const Header = ({ cart, total, loading, onCheckout }) => {
                         </button>
                     ))}
                 </nav>
-
-                <CartBox
-                    cart={cart}
-                    total={total}
-                    loading={loading}
-                    onCheckout={onCheckout}
-                />
+                <div className="flex items-center gap-8">
+                    <CartBox
+                        cart={cart}
+                        total={total}
+                        loading={loading}
+                        onCheckout={onCheckout}
+                    />
+                    <UserMenu onUserChange={onUserChange} />
+                </div>
             </div>
         </header>
     );

@@ -1,16 +1,33 @@
-# React + Vite
+# Flash Sale Frontend — Space-Based Architecture
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Thành viên:** Trần Long Vũ & Hồ Quang Nhân
 
-Currently, two official plugins are available:
+Hệ thống UI được thiết kế theo phong cách **Quiet Luxury**, tinh tế và hiện đại, kết nối với hệ thống backend SBA qua các dịch vụ phân tán.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tính năng
+- **Trần Long Vũ (22717471):** 
+    - **Home Page**: Hiển thị danh sách sản phẩm Dior Luxury với hiệu ứng hover và layout sang trọng.
+    - **Product Details**: Trang chi tiết sản phẩm, chọn biến thể (size/color), xem thông tin chất liệu, xuất xứ.
+    - **Shopping Cart**: Mini-cart dropdown và trang giỏ hàng, cập nhật số lượng trực tiếp.
+- **Hồ Quang Nhân (22715701):**
+    - **User Auth**: Hệ thống Đăng nhập/Đăng xuất bảo mật.
+    - **Checkout Flow**: Quy trình thanh toán, nhập thông tin giao hàng.
+    - **Inventory Sync**: Hiển thị trạng thái kho hàng thời gian thực (Flash Sale).
+    - **Order History**: Xem lại các đơn hàng đã đặt.
 
-## React Compiler
+## Công nghệ
+- **ReactJS** + **Vite**
+- **Tailwind CSS** (Quiet Luxury style)
+- **Lucide React** (Icons)
+- **Framer Motion** (Animations)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Cách chạy
+```bash
+# Cài đặt dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Chạy môi trường phát triển
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Truy cập:** `http://localhost:5173`
